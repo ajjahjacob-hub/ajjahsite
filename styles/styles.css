@@ -1,0 +1,543 @@
+/* =========================================================
+   AJJAH Designs – Polished Production Styles (no HTML changes)
+   ========================================================= */
+
+/* ---------- Theme ---------- */
+:root{
+  --bg:#0f1216;           /* deep background for contrast */
+  --surface:#14181d;      /* cards / header surface */
+  --surface-2:#1b2128;    /* hovered surfaces */
+  --text:#e8ecf1;
+  --muted:#a5afba;
+  --border:#2a323b;
+  --accent:#7cc0ff;       /* soft cyan/blue */
+  --accent-ink:#0a141f;
+
+  --radius:14px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.35);
+  --shadow-md:0 10px 30px rgba(0,0,0,.35);
+
+  --container:1120px;
+
+  --fs-1: clamp(2rem, 1.35rem + 2.3vw, 3.25rem);
+  --fs-2: clamp(1.35rem, 1.15rem + 1vw, 2rem);
+  --fs-3: clamp(1rem, .95rem + .35vw, 1.125rem);
+}
+
+/* ---------- Reset / Base ---------- */
+*,
+*::before,
+*::after { box-sizing:border-box; }
+
+html{ -webkit-text-size-adjust:100%; }
+
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  letter-spacing:.01em;
+}
+
+img,svg,video{ display:block; max-width:100%; height:auto; }
+
+a{ color:inherit; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+@media (prefers-reduced-motion:reduce){
+  *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+}
+
+/* ---------- Page frame ---------- */
+body>header, body>main, body>footer { padding-inline: 1rem; }
+@media (min-width: 768px){ body>header, body>main, body>footer { padding-inline: 2rem; } }
+body>header>nav, body>main, body>footer { max-width: var(--container); margin-inline:auto; }
+
+/* ---------- Skip link ---------- */
+.skip-link{
+  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus{
+  position:fixed; left:1rem; top:1rem;
+  width:auto; height:auto; padding:.5rem .75rem;
+  background:var(--accent); color:var(--accent-ink);
+  border-radius:10px; z-index:1000; text-decoration:none;
+}
+
+/* =========================================================
+   Header / Nav (sticky, glassy, logo scaled)
+   ========================================================= */
+header{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter: blur(10px);
+  background: color-mix(in oklab, var(--surface) 85%, transparent);
+  border-bottom:1px solid var(--border);
+}
+
+header nav{
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  align-items:center;
+  gap:.75rem;
+  min-height:72px;
+}
+
+/* Brand (logo + name) */
+header nav > a{
+  display:inline-flex; align-items:center; gap:.6rem;
+  padding:.35rem .35rem; border-radius:10px;
+}
+header nav > a:hover{ background:var(--surface-2); text-decoration:none; }
+
+/* SCALE THE LOGO (overrides inline width/height) */
+header nav > a img{
+  height:42px; width:auto; object-fit:contain;
+}
+@media (min-width:900px){
+  header nav > a img{ height:56px; }
+}
+
+/* Brand text */
+header nav > a span{ font-weight:800; letter-spacing:.02em; white-space:nowrap; }
+
+/* Menu button */
+#menu-toggle{
+  justify-self:end;
+  appearance:none; font:inherit;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+  padding:.6rem .85rem .6rem 2.6rem;
+  border-radius:12px; cursor:pointer;
+  box-shadow:var(--shadow-sm);
+  position:relative;
+}
+#menu-toggle:hover{ background:var(--surface-2); }
+
+/* Hamburger icon */
+#menu-toggle::before,
+#menu-toggle::after{
+  content:"";
+  position:absolute; left:.85rem; width:18px; height:2px; background:currentColor;
+  transition: transform .18s ease, top .18s ease, opacity .18s ease;
+}
+#menu-toggle::before{ top:.9rem; box-shadow:0 6px 0 currentColor; }
+#menu-toggle::after{ top:1.8rem; }
+
+/* Turn into "X" when open */
+#menu-toggle[aria-expanded="true"]::before{ top:1.35rem; transform:rotate(45deg); box-shadow:none; }
+#menu-toggle[aria-expanded="true"]::after{ top:1.35rem; transform:rotate(-45deg); }
+
+/* Menu panel */
+#primary-menu{
+  list-style:none; padding:0; margin:0;
+  display:none;
+  position:absolute;
+  top:calc(100% + 8px); right:1rem; left:1rem;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:14px;
+  box-shadow:var(--shadow-md);
+  padding:.35rem;
+}
+#menu-toggle[aria-expanded="true"] + #primary-menu{ display:block; }
+
+#primary-menu a{
+  display:block; padding:.85rem 1rem; border-radius:10px;
+}
+#primary-menu a:hover, #primary-menu a:focus-visible{ background:var(--surface-2); text-decoration:none; }
+#primary-menu a[aria-current="page"]{ color:var(--accent); font-weight:700; }
+
+/* Desktop nav */
+@media (min-width: 1000px){
+  #menu-toggle{ display:none; }
+  header nav{ grid-template-columns: auto 1fr; }
+  #primary-menu{
+    position:static; display:flex !important; gap:.35rem;
+    background:transparent; border:0; box-shadow:none; padding:0; align-self:center; justify-self:end;
+  }
+  #primary-menu a{ padding:.6rem .85rem; }
+  #primary-menu a:hover{ background:var(--surface-2); }
+}
+
+/* =========================================================
+   Main / Hero / Sections
+   ========================================================= */
+main{ padding-block: 2rem 3rem; }
+
+main > h1{
+  font-size:var(--fs-1);
+  line-height:1.1;
+  margin: .25rem 0 .35rem 0;
+  letter-spacing:.01em;
+}
+
+main > p{
+  font-size:var(--fs-3);
+  color:var(--muted);
+  margin: 0 0 1.25rem;
+}
+
+/* Section card look */
+main > section{
+  margin: 1.5rem 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  box-shadow: var(--shadow-sm);
+}
+@media (min-width: 768px){
+  main > section{ padding:1.6rem; }
+}
+
+section > h2{
+  font-size:var(--fs-2);
+  margin:0 0 .75rem;
+}
+
+/* Lists */
+ul{ padding-left:1.25rem; }
+li + li{ margin-top:.4rem; }
+
+/* Inline CTA links inside <p> look like buttons */
+main p a{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--accent-ink);
+  border:1px solid color-mix(in oklab, var(--accent) 80%, black);
+  padding:.7rem 1rem;
+  border-radius:12px;
+  text-decoration:none;
+  box-shadow: var(--shadow-sm);
+}
+main p a:hover{ filter:brightness(.97); text-decoration:none; }
+
+/* Images in content: balanced, not oversized */
+main section img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:#000;
+  box-shadow: var(--shadow-sm);
+  margin-top:.75rem;
+}
+
+/* =========================================================
+   Gallery Grid
+   ========================================================= */
+#gallery{
+  display:grid;
+  gap:1rem;
+}
+@media (min-width:640px){ #gallery{ grid-template-columns: repeat(2, 1fr); } }
+@media (min-width:960px){ #gallery{ grid-template-columns: repeat(3, 1fr); } }
+
+#gallery figure{
+  border:1px solid var(--border);
+  border-radius:14px;
+  overflow:hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+#gallery img{
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width:100%; height:auto;
+}
+#gallery figcaption{
+  padding:.75rem 1rem;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+
+/* =========================================================
+   Forms (Contact)
+   ========================================================= */
+form{ max-width: 980px; }
+
+fieldset{
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1rem;
+  margin:0 0 1rem;
+  background: var(--surface);
+}
+legend{ padding:0 .25rem; font-weight:700; }
+
+label{ display:block; margin:.6rem 0 .25rem; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+textarea{
+  width:100%;
+  padding:.7rem .9rem;
+  border:1px solid #3a444f;
+  border-radius:12px;
+  background:#0b0f13;
+  color:var(--text);
+  font:inherit;
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+input:focus, textarea:focus{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 35%, transparent);
+  outline:0;
+}
+textarea{ resize:vertical; min-height:140px; }
+
+input[type="radio"],
+input[type="checkbox"]{ transform: translateY(1px); margin-right:.4rem; }
+
+button,
+input[type="submit"],
+[type="button"]{
+  display:inline-flex; align-items:center; gap:.5rem;
+  font:inherit;
+  padding:.75rem 1.05rem;
+  border-radius:12px;
+  border:1px solid color-mix(in oklab, var(--accent) 80%, black);
+  background:var(--accent);
+  color:var(--accent-ink);
+  cursor:pointer;
+  box-shadow: var(--shadow-sm);
+}
+button:hover,
+input[type="submit"]:hover{ filter:brightness(.96); }
+button:disabled{ opacity:.6; cursor:not-allowed; }
+
+hr{ border:0; border-top:1px solid var(--border); margin:1.25rem 0; }
+
+/* Map frame harmony */
+iframe[title^="Map"]{
+  border:1px solid var(--border) !important;
+  border-radius:14px;
+  box-shadow: var(--shadow-sm);
+  background:#000;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+footer{
+  border-top:1px solid var(--border);
+  background: var(--surface);
+  padding-block: 1.75rem;
+  margin-top: 2.5rem;
+}
+footer > a{
+  display:inline-flex; align-items:center; gap:.6rem;
+  text-decoration:none; padding:.25rem .35rem; border-radius:10px;
+}
+footer > a:hover{ background:var(--surface-2); }
+footer nav ul{
+  list-style:none; padding:0; margin:.8rem 0 0;
+  display:flex; gap:.8rem; flex-wrap:wrap;
+}
+footer img{ height:40px; width:auto; }
+
+/* =========================================================
+   Light scheme (if user prefers)
+   ========================================================= */
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#fbfcfe; --surface:#ffffff; --surface-2:#f4f6f8;
+    --text:#14171a; --muted:#5a6570; --border:#e7ebef;
+    --accent:#1463ff; --accent-ink:#ffffff;
+  }
+  header{ background: color-mix(in oklab, var(--surface) 92%, transparent); }
+  main section img{ background:#fff; }
+  input[type="text"],input[type="email"],input[type="tel"],input[type="date"],input[type="file"],textarea{
+    background:#fff; border-color:#cfd7df; color:#14171a;
+  }
+}
+
+/* ===== Quick fixes ===== */
+
+/* ===== Fix nav/footer offset caused by global `li + li` spacing ===== */
+
+/* 1) Don’t apply vertical stacking margins inside navigation lists */
+nav ul li,
+nav ul li + li { margin-top: 0 !important; }
+
+/* If you want the global list spacing only in page content, scope it: */
+main li + li { margin-top: .4rem; }   /* replaces the old global rule */
+
+/* 2) Also normalize alignment for nav/footer links */
+#primary-menu,
+footer nav ul { align-items: center; }          /* flex containers are already set */
+
+#primary-menu li,
+footer nav li { display: flex; }                /* ensure consistent cross-axis box */
+
+#primary-menu a,
+footer nav a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+  padding: .6rem .85rem;                        /* header */
+}
+
+footer nav a { padding: .25rem .35rem; }        /* footer’s smaller tap area */
+
+
+/* 3) Gallery: make the section heading span full grid width */
+#gallery { display: grid; gap: 1rem; }
+#gallery > h2 {
+  grid-column: 1 / -1;                             /* title spans all columns */
+  margin-bottom: .5rem;
+}
+
+/* ===== Theme toggle button (footer) ===== */
+.theme-toggle{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.45rem .7rem;
+  border-radius:10px;
+  border:1px solid color-mix(in oklab, var(--accent) 65%, black);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+.theme-toggle:hover{ filter: brightness(.96); }
+.theme-toggle__icon{ font-size: 1rem; line-height: 1; }
+
+/* ===== Explicit theme overrides ===== */
+/* Use attribute on <html> (i.e., :root). These override system prefs. */
+:root[data-theme="dark"]{
+  --bg:#0f1216; --surface:#14181d; --surface-2:#1b2128;
+  --text:#e8ecf1; --muted:#a5afba; --border:#2a323b;
+  --accent:#7cc0ff; --accent-ink:#0a141f;
+}
+:root[data-theme="light"]{
+  --bg:#fbfcfe; --surface:#ffffff; --surface-2:#f4f6f8;
+  --text:#14171a; --muted:#5a6570; --border:#e7ebef;
+  --accent:#1463ff; --accent-ink:#ffffff;
+}
+/* Surfaces that depend on theme variables already adapt, but we also
+   mirror header/map tweaks used in your light-scheme block: */
+:root[data-theme="light"] header{
+  background: color-mix(in oklab, var(--surface) 92%, transparent);
+}
+:root[data-theme="dark"] header{
+  background: color-mix(in oklab, var(--surface) 85%, transparent);
+}
+
+/* Keep system preference **only** when no explicit override is set */
+:root:not([data-theme]){ color-scheme: light dark; } /* enable UA form styles */
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#fbfcfe; --surface:#ffffff; --surface-2:#f4f6f8;
+    --text:#14171a; --muted:#5a6570; --border:#e7ebef;
+    --accent:#1463ff; --accent-ink:#ffffff;
+  }
+  :root:not([data-theme="dark"]) header{
+    background: color-mix(in oklab, var(--surface) 92%, transparent);
+  }
+}
+
+/* Footer: push the nav list to the right */
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;              /* allows wrapping on small screens */
+}
+
+footer nav {
+  margin-left: auto;            /* pushes nav to the right edge */
+}
+
+footer nav ul {
+  justify-content: flex-end;    /* keep items right-aligned if wrapped */
+}
+
+/* ===== Perfectly centered hamburger (override) ===== */
+#menu-toggle{
+  /* adjust left padding to make room for the icon */
+  --bar-w: 20px;          /* bar width  */
+  --bar-h: 2px;           /* bar height */
+  --bar-gap: 6px;         /* distance from middle to top/bottom */
+  padding-left: calc(.85rem + var(--bar-w) + .75rem);
+  position: relative;
+}
+
+/* Reset previous pseudo styles */
+#menu-toggle::before,
+#menu-toggle::after{
+  content:"";
+  position:absolute;
+  left:.85rem;
+  width:var(--bar-w);
+  height:var(--bar-h);
+  background:currentColor;
+  top:50%;
+  transform:translateY(-50%);
+  transition: transform .18s ease, opacity .18s ease;
+  box-shadow:none;
+}
+
+/* CLOSED state: draw all three bars with ::after (middle + two shadows) */
+#menu-toggle::before{ opacity:0; }  /* hidden until we make the "X" */
+#menu-toggle::after{
+  /* middle bar is the element; top/bottom are perfectly symmetric shadows */
+  box-shadow:
+    0 calc(var(--bar-gap) * -1) 0 currentColor,  /* top    */
+    0 var(--bar-gap) 0 currentColor;             /* bottom */
+}
+
+/* OPEN state: convert into an "X" using two bars (no box-shadows) */
+#menu-toggle[aria-expanded="true"]::after{
+  box-shadow:none;                 /* only one bar */
+  transform:translateY(-50%) rotate(45deg);
+}
+#menu-toggle[aria-expanded="true"]::before{
+  opacity:1;
+  transform:translateY(-50%) rotate(-45deg);
+}
+
+/* Taller hamburger pill on very small screens */
+@media (max-width: 480px){
+  #menu-toggle{
+    font-size: 0;                        /* hide the word "Menu" */
+    /* keep your icon centering variables */
+    --bar-w: 20px;
+    --bar-h: 2px;
+    --bar-gap: 7px;                      /* a touch more separation */
+
+    /* add vertical room + keep compact width */
+    padding: .72rem .70rem .72rem calc(.85rem + var(--bar-w) + .55rem);
+    min-width: 44px;
+    min-height: 44px;                    /* guaranteed tall hit area */
+    border-radius: 999px;                /* pill look */
+  }
+  /* keep the pseudo-elements at the original left (.85rem) so centering stays perfect */
+}
+
+/* Center the hamburger bars perfectly inside the pill on very small screens */
+@media (max-width: 480px){
+  #menu-toggle::before,
+  #menu-toggle::after{
+    left: 50%;
+    transform: translate(-50%, -50%); /* center horizontally & vertically */
+  }
+  #menu-toggle[aria-expanded="true"]::after{
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  #menu-toggle[aria-expanded="true"]::before{
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+
