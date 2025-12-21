@@ -235,7 +235,7 @@ main section img{
   gap:1rem;
 }
 @media (min-width:640px){ #gallery{ grid-template-columns: repeat(2, 1fr); } }
-@media (min-width:960px){ #gallery{ grid-template-columns: repeat(3, 1fr); } }
+@media (min-width:960px){ #gallery{ grid-template-columns: repeat(2, 1fr); } }
 
 #gallery figure{
   border:1px solid var(--border);
@@ -253,6 +253,13 @@ main section img{
   padding:.75rem 1rem;
   color:var(--muted);
   border-top:1px solid var(--border);
+}
+/* Tells the description text to span across all columns, just like the H2 */
+#gallery > p {
+    grid-column: 1 / -1; 
+    margin-bottom: 2rem; /* Adds the extra space you wanted */
+    max-width: 70ch;     /* Optional: Keeps line length readable */
+    color: var(--muted); /* Matches your theme text style */
 }
 
 /* =========================================================
