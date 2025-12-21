@@ -15,3 +15,5 @@ TODO: Consider adding a dedicated back button to each of the project subpages. A
 a seperate, vertical navigation menu on the left for the different projects.
 TODO: Add organised subfolders for images based on the webpage/category the belong to
 TODO: Potentially increase font size/bold for the name/heading of each project
+
+Just noticed the formatting issues on gallery pages after update, should be an easy fix
