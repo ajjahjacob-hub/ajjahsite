@@ -20,4 +20,6 @@ Just noticed the formatting issues on gallery pages after update, should be an e
 
 TODO: Add view fullscreen/larger when clicking project images
 
-
+<a href="images/1 CO HOUSING PLANS COVER SHEET.png">
+<img src="images/1 CO HOUSING PLANS COVER SHEET.png" width="800" height="600" alt="Project image 1 placeholder">
+</a>
