@@ -35,6 +35,8 @@ PROJECT 4: SHIPPING CONTAINER CABIN
 Urgent: Gallery contains both a "Gallery" and "Projects" title at the top
 Urgent: "Projects" title and description below are not correctly aligned with projects section
 Urgent: About page title no aligned with page content
+Urgent: Fix mobile hamburger menu so text is centered and clickable area cover the entire line width within the dropdown
+Urgent: Embedded google form not fitting correctly on smaller screen sizes
 
 Look at centering the google form
 Consider removing map from the contact page?
