@@ -23,3 +23,23 @@ TODO: Add view fullscreen/larger when clicking project images
 <a href="images/1 CO HOUSING PLANS COVER SHEET.png">
 <img src="images/1 CO HOUSING PLANS COVER SHEET.png" width="800" height="600" alt="Project image 1 placeholder">
 </a>
+
+Updated list of issues, including non-essential (may 2026):
+
+Urgent: Remove the placeholder inquiry form on contact page (done)
+Urgent: Mismatched titles between gallery page projects and the project pages
+Urgent: Remove placeholder images from the following project pages:
+PROJECT 1: 2025 Co-Housing Concept Design, PROJECT 3: WOODEN CABIN, PROJECT 6: ART GALLERY
+Urgent: Fix video formatting on the following project pages to match image formatting:
+PROJECT 4: SHIPPING CONTAINER CABIN
+Urgent: Gallery contains both a "Gallery" and "Projects" title at the top
+Urgent: "Projects" title and description below are not correctly aligned with projects section
+Urgent: About page title no aligned with page content
+
+Look at centering the google form
+Consider removing map from the contact page?
+Footer formatting across all pages
+"View" button for each project needs additional left padding
+Adding a dedicated back button to each project page, returning the user to the gallery page
+Optional polish for later: add a drop-down menu under the "Gallery" in the nav bar with a list containing 
+links to each seperate project page
