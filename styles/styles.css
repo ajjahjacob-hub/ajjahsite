@@ -261,7 +261,9 @@ main section img{
     max-width: 70ch;     /* Optional: Keeps line length readable */
     color: var(--muted); /* Matches your theme text style */
 }
-
+#gallery figure {
+  margin: 0;  /* kill browser default (1em 40px in Chrome) */
+}
 /* =========================================================
    Forms (Contact)
    ========================================================= */
