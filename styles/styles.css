@@ -54,8 +54,8 @@ a:hover{ text-decoration:underline; }
 /* ---------- Page frame ---------- */
 body>header, body>main, body>footer { padding-inline: 1rem; }
 @media (min-width: 768px){ body>header, body>main, body>footer { padding-inline: 2rem; } }
-body>header>nav, body>main, body>footer { max-width: var(--container); margin-inline:auto; }
-
+body>header>nav, body>main { max-width: var(--container); margin-inline:auto; }
+footer > * { max-width: var(--container); margin-inline: auto; }
 /* ---------- Skip link ---------- */
 .skip-link{
   position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
