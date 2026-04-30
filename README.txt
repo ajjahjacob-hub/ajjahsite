@@ -45,3 +45,5 @@ Footer formatting across all pages
 Adding a dedicated back button to each project page, returning the user to the gallery page
 Optional polish for later: add a drop-down menu under the "Gallery" in the nav bar with a list containing 
 links to each seperate project page
+
+Google form needs a text entry for some sections with the option to select "other"
