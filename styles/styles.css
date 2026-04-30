@@ -549,6 +549,14 @@ footer nav ul {
   }
 }
 
+/* Quick fix for embedded google form formatting*/
+.embed-responsive {
+  width: 100%;
+  overflow: hidden;
+}
 
-
-
+.embed-responsive iframe {
+  width: 100%;
+  min-width: 0;
+  display: block;
+}
