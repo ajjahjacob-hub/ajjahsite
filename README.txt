@@ -47,6 +47,7 @@ Footer formatting across all pages (mostly done)
 Adding a dedicated back button to each project page, returning the user to the gallery page
 Optional polish for later: add a drop-down menu under the "Gallery" in the nav bar with a list containing 
 links to each seperate project page
+Add a more obvious colour shift for blue buttons across the site
 
 Google form needs a text entry for some sections with the option to select "other"
 
@@ -60,3 +61,4 @@ Switching to contain will allow the full gallery images to fit and be fully visi
 The drawback is that black bars will be added to achieve this without compromising image aspect ratio, note
 that the images are fully visible by clicking to open a fullscreen view. Need to decide whether to take this 
 approach or to stay with the current setup.
+
