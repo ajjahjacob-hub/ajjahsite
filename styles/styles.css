@@ -264,6 +264,14 @@ main section img{
 #gallery figure {
   margin: 0;  /* kill browser default (1em 40px in Chrome) */
 }
+
+#gallery video {
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  background: #000;
+  width: 100%;
+  height: auto;
+}
 /* =========================================================
    Forms (Contact)
    ========================================================= */
