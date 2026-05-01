@@ -31,17 +31,19 @@ Urgent: Mismatched titles between gallery page projects and the project pages
 Urgent: Remove placeholder images from the following project pages:
 PROJECT 1: 2025 Co-Housing Concept Design, PROJECT 3: WOODEN CABIN, PROJECT 6: ART GALLERY
 Urgent: Fix video formatting on the following project pages to match image formatting:
-PROJECT 4: SHIPPING CONTAINER CABIN
+PROJECT 4: SHIPPING CONTAINER CABIN (done)
 Urgent: Gallery contains both a "Gallery" and "Projects" title at the top
 Urgent: "Projects" title and description below are not correctly aligned with projects section
-Urgent: About page title no aligned with page content
+Urgent: About page title not aligned with page content
 Urgent: Fix mobile hamburger menu so text is centered and clickable area cover the entire line width within the dropdown
-Urgent: Embedded google form not fitting correctly on smaller screen sizes
+Urgent: Embedded google form not fitting correctly on smaller screen sizes (done)
+Urgent: Fix about page content alignment/margin issues
+Urgent: Fix dropdown box clickable area (done)
 
-Look at centering the google form
+Look at centering the google form (done)
 Consider removing map from the contact page?
-Footer formatting across all pages
-"View" button for each project needs additional left padding
+Footer formatting across all pages (mostly done)
+"View" button for each project needs additional left padding (done)
 Adding a dedicated back button to each project page, returning the user to the gallery page
 Optional polish for later: add a drop-down menu under the "Gallery" in the nav bar with a list containing 
 links to each seperate project page
