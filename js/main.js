@@ -69,8 +69,8 @@
     root.setAttribute('data-theme', theme);
     const isLight = theme === 'light';
     btn.setAttribute('aria-pressed', String(isLight)); // pressed = light mode
-    btn.querySelector('.theme-toggle__icon').textContent = isLight ? '🌞' : '🌙';
-    btn.querySelector('.theme-toggle__text').textContent  = isLight ? 'Light' : 'Dark';
+    btn.querySelector('.theme-toggle__icon').textContent = isLight ? '🌙' : '🌞';
+    btn.querySelector('.theme-toggle__text').textContent  = isLight ? 'Dark' : 'Light';
     btn.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} theme`);
   }
 })();
