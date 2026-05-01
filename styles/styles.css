@@ -145,9 +145,14 @@ header nav > a span{ font-weight:800; letter-spacing:.02em; white-space:nowrap; 
 }
 #menu-toggle[aria-expanded="true"] + #primary-menu{ display:block; }
 
-#primary-menu a{
-  display:block; padding:.85rem 1rem; border-radius:10px;
+#primary-menu a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: .85rem 1rem;
+  border-radius: 10px;
 }
+
 #primary-menu a:hover, #primary-menu a:focus-visible{ background:var(--surface-2); text-decoration:none; }
 #primary-menu a[aria-current="page"]{ color:var(--accent); font-weight:700; }
 
@@ -393,20 +398,25 @@ main li + li { margin-top: .4rem; }   /* replaces the old global rule */
 
 /* 2) Also normalize alignment for nav/footer links */
 #primary-menu,
-footer nav ul { align-items: center; }          /* flex containers are already set */
+footer nav ul { align-items: center; }
 
-#primary-menu li,
-footer nav li { display: flex; }                /* ensure consistent cross-axis box */
+#primary-menu li { display: block; }
+footer nav li { display: flex; }
 
-#primary-menu a,
+#primary-menu a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: .85rem 1rem;
+  border-radius: 10px;
+}
+
 footer nav a {
   display: inline-flex;
   align-items: center;
   line-height: 1.2;
-  padding: .6rem .85rem;                        /* header */
+  padding: .25rem .35rem;
 }
-
-footer nav a { padding: .25rem .35rem; }        /* footer’s smaller tap area */
 
 
 /* 3) Gallery: make the section heading span full grid width */
