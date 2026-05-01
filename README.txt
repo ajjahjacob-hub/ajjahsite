@@ -47,3 +47,14 @@ Optional polish for later: add a drop-down menu under the "Gallery" in the nav b
 links to each seperate project page
 
 Google form needs a text entry for some sections with the option to select "other"
+
+Note for CSS rule:
+#gallery img{
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width:100%; height:auto;
+}
+Switching to contain will allow the full gallery images to fit and be fully visible within their 4:3 frames.
+The drawback is that black bars will be added to achieve this without compromising image aspect ratio, note
+that the images are fully visible by clicking to open a fullscreen view. Need to decide whether to take this 
+approach or to stay with the current setup.
