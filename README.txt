@@ -39,6 +39,7 @@ Urgent: Fix mobile hamburger menu so text is centered and clickable area cover t
 Urgent: Embedded google form not fitting correctly on smaller screen sizes (done)
 Urgent: Fix about page content alignment/margin issues
 Urgent: Fix dropdown box clickable area (done)
+Urgent: Screen sizes below ~410px in width experience overlap between menu nav and logo/company name
 
 Look at centering the google form (done)
 Consider removing map from the contact page?
