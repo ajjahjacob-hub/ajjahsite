@@ -113,7 +113,8 @@ On smaller screen sizes, the footer is too tall, consider reducing verical margi
 at around 560px width
 On smaller screen sizes, too much white space is given between the end of the content and footer
 
-NON-ESSENTIALS:
+NON-ESSENTIALS
+
 Ideally add a more drastic colour change when blue buttons are hovered, includes both gallery and other buttons
 Ideally a higher resolution image should be used for home page 1st image
 Elements of the header appear to have a fixed max-width. Footer elements appear to stretch further than intended.
