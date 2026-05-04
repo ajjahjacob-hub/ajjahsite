@@ -84,6 +84,8 @@ Decide on cut vs fitted images for gallery/projects
 Check that images and videos on project pages are appropriate and professional
 Tidy project titles and description across the gallery and projects pages (Both wording and style)
 Confirm direction for project6 page (currently displays other projects but is not yet functional)
+Too much space between the "Projects" title and the text below, this is likely due to these elements
+being contained within the section with id="gallery"
 
 About page:
 The content (images and text) between "Anna Maria Kotua" and "Approach & Values" has an inconsistent amount of 
