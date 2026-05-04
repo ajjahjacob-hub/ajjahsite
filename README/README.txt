@@ -108,5 +108,6 @@ Elements of the header appear to have a fixed max-width. Footer elements appear 
 If possible, add an X button to images opened from the project pages, a further improvement could be made to add
 < and > buttons to switch to the previous/next image of that project page.
 Remove the underline when hovering the logo in the footer
+Improve the overall formatting/styling, some areas look clunky
 
 -----------------------------------------------------------------------------------------------------------------------------------
