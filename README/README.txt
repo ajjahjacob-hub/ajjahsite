@@ -100,6 +100,9 @@ Embedded inquiry form has an added scroll bar on smaller screen sizes???
 Header/footer/navigation/misc:
 Check spelling and grammar is correct, including inquiry form
 Screen sizes below ~410px in width experience overlap between menu nav and logo/company name
+Files structure needs a complete overhaul. File/folder names should be consistent, descriptive, and follow correct naming conventions.
+Additionally, each page may need to be placed into an individual folder named after the appropriate / of the page. Example:
+about.html should be placed in a folder named "about". This may be required for url to look like ajjaharchitecture.co.nz/about
 
 NON-ESSENTIALS:
 Ideally add a more drastic colour change when blue buttons are hovered, includes both gallery and other buttons
