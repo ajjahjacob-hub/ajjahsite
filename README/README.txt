@@ -72,9 +72,9 @@ Home Page:
 Fix image 2 of the home page to look more realistic (bushes growing from decking!?)
 
 Services page:
+Check content is still accurate and up to date. The current content quantity is ideal.
 
 Gallery/Project pages:
-
 Confirmation for gallery page naming. Currently contains "Gallery" header and "Projects" subheader
 Title for each project on the gallery page should match the title of the corresponding project page
 Decide on cut vs fitted images for gallery/projects
@@ -83,6 +83,10 @@ Tidy project titles and description across the gallery and projects pages (Both 
 Confirm direction for project6 page (currently displays other projects but is not yet functional)
 
 About page:
+The content (images and text) between "Anna Maria Kotua" and "Approach & Values" has an inconsistent amount of 
+side margins. Remove/reduce to align with other content. Appeary to be margin attached to the <figure> element
+Ideally a clearer picture of Anna Maria could be used for this page.
+Change "KOTUA" to "Kotua"?
 
 Contact page:
 Contact details should be consistent between the "contact" section and the inquiry form, 2 different emails are given
@@ -91,8 +95,9 @@ Decide on if a map is needed for the contact page (likely no, the less, the bett
 
 Header/footer/navigation/misc:
 Check spelling and grammar is correct, including inquiry form
+Screen sizes below ~410px in width experience overlap between menu nav and logo/company name
 
 NON-ESSENTIALS:
 Ideally add a more drastic colour change when blue buttons are hovered, includes both gallery and other buttons
 Ideally a higher resolution image should be used for home page 1st image
-
+Elements of the header appear to have a fixed max-width. Footer elements appear to stretch further than intended.
