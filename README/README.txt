@@ -92,6 +92,7 @@ Contact page:
 Contact details should be consistent between the "contact" section and the inquiry form, 2 different emails are given
 Validate inquiry form, some questions with "other" as an option, do not currently give the user a text entry to fill
 Decide on if a map is needed for the contact page (likely no, the less, the better)
+Embedded inquiry form has an added scroll bar on smaller screen sizes???
 
 Header/footer/navigation/misc:
 Check spelling and grammar is correct, including inquiry form
@@ -101,3 +102,6 @@ NON-ESSENTIALS:
 Ideally add a more drastic colour change when blue buttons are hovered, includes both gallery and other buttons
 Ideally a higher resolution image should be used for home page 1st image
 Elements of the header appear to have a fixed max-width. Footer elements appear to stretch further than intended.
+If possible, add an X button to images opened from the project pages, a further improvement could be made to add
+< and > buttons to switch to the previous/next image of that project page.
+Remove the underline when hovering the logo in the footer
