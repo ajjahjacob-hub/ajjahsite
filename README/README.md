@@ -63,3 +63,10 @@ The drawback is that black bars will be added to achieve this without compromisi
 that the images are fully visible by clicking to open a fullscreen view. Need to decide whether to take this 
 approach or to stay with the current setup.
 
+04/05/26 updates
+
+Essentials:
+Confirmation for gallery page naming. Currently contains "Gallery" header and "Projects" subheader
+
+
+Non-essentials:
