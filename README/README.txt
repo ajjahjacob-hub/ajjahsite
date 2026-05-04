@@ -129,7 +129,7 @@ Discussion points/other notes:
 Importance of SEO, custom domain, hosting options, post-deployment development, and cost efficiency
 Reworking/recreating website - will be much easier once all content is finalised and organised
 Hosting can be done for free directly through github pages with no downside except a 100gb/month traffic limit (unlikely to reach limit)
-Recommended custom domain: ajjaharchitecture.co.nz
+Recommended custom domain: ajjaharchitecture.co.nz - This should be included on the business card
 Setup google analytics to cover page views, click tracking, traffic, user behaviour, etc. This will help to see how many people are actually
 visiting the website, where they go, what they click, etc
 
