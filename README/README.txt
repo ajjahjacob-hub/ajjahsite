@@ -88,7 +88,7 @@ Confirm direction for project6 page (currently displays other projects but is no
 About page:
 The content (images and text) between "Anna Maria Kotua" and "Approach & Values" has an inconsistent amount of 
 side margins. Remove/reduce to align with other content. Appeary to be margin attached to the <figure> element
-Ideally a clearer picture of Anna Maria could be used for this page.
+Ideally a clearer picture of Anna Maria could be used for this page
 Change "KOTUA" to "Kotua"?
 
 Contact page:
@@ -103,13 +103,16 @@ Screen sizes below ~410px in width experience overlap between menu nav and logo/
 Files structure needs a complete overhaul. File/folder names should be consistent, descriptive, and follow correct naming conventions.
 Additionally, each page may need to be placed into an individual folder named after the appropriate / of the page. Example:
 about.html should be placed in a folder named "about". This may be required for url to look like ajjaharchitecture.co.nz/about
+An alternative approach to storing images within folders is to either: create subfolders within the imgaes folder to organize images or
+to create an image folder within each page folder. The latter is likely more organized.
+Image names need to be updated to remove spaces and to be more accurate/descriptive
 
 NON-ESSENTIALS:
 Ideally add a more drastic colour change when blue buttons are hovered, includes both gallery and other buttons
 Ideally a higher resolution image should be used for home page 1st image
 Elements of the header appear to have a fixed max-width. Footer elements appear to stretch further than intended.
 If possible, add an X button to images opened from the project pages, a further improvement could be made to add
-< and > buttons to switch to the previous/next image of that project page.
+< and > buttons to switch to the previous/next image of that project page
 Remove the underline when hovering the logo in the footer
 Improve the overall formatting/styling, some areas look clunky
 
