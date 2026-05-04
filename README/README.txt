@@ -132,6 +132,7 @@ Hosting can be done for free directly through github pages with no downside exce
 Recommended custom domain: ajjaharchitecture.co.nz - This should be included on the business card
 Setup google analytics to cover page views, click tracking, traffic, user behaviour, etc. This will help to see how many people are actually
 visiting the website, where they go, what they click, etc
+Annual fee for the custom domain would likely be classed as a business expense and therefore deductible.
 
 SEO improvement
 The key things that would help for local search:
@@ -152,4 +153,6 @@ Shows the business on Google Maps
 Displays contact details, opening hours, and website link directly in search results
 Allows clients to leave Google reviews, which significantly impacts local search ranking
 Free to set up and maintain
+
+GBP should be setup after the website is already live with the correct URL
 -----------------------------------------------------------------------------------------------------------------------------------
