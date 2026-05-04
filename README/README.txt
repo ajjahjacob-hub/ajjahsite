@@ -107,6 +107,9 @@ about.html should be placed in a folder named "about". This may be required for 
 An alternative approach to storing images within folders is to either: create subfolders within the imgaes folder to organize images or
 to create an image folder within each page folder. The latter is likely more organized.
 Image names need to be updated to remove spaces and to be more accurate/descriptive
+On smaller screen sizes, the footer is too tall, consider reducing verical margin of the footer content after top-down overlap is reached 
+at around 560px width
+On smaller screen sizes, too much white space is given between the end of the content and footer
 
 NON-ESSENTIALS:
 Ideally add a more drastic colour change when blue buttons are hovered, includes both gallery and other buttons
