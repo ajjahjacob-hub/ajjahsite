@@ -112,6 +112,8 @@ Image names need to be updated to remove spaces and to be more accurate/descript
 On smaller screen sizes, the footer is too tall, consider reducing verical margin of the footer content after top-down overlap is reached 
 at around 560px width
 On smaller screen sizes, too much white space is given between the end of the content and footer
+IMPORTANT: Don't forget to setup google analytics to cover page views, click tracking, traffic, user behaviour, etc. 
+Should only require a small JS snippet to each page.
 
 NON-ESSENTIALS
 
@@ -126,6 +128,28 @@ Improve the overall formatting/styling, some areas look clunky
 Discussion points/other notes:
 Importance of SEO, custom domain, hosting options, post-deployment development, and cost efficiency
 Reworking/recreating website - will be much easier once all content is finalised and organised
+Hosting can be done for free directly through github pages with no downside except a 100gb/month traffic limit (unlikely to reach limit)
+Recommended custom domain: ajjaharchitecture.co.nz
+Setup google analytics to cover page views, click tracking, traffic, user behaviour, etc. This will help to see how many people are actually
+visiting the website, where they go, what they click, etc
 
+SEO improvement
+The key things that would help for local search:
+Google Business Profile - free, and arguably the most impactful single thing for local search. Shows up in Google Maps results and the local business panel. Critical for "architect Balclutha" type searches.
+Page content - pages should mention the location and services explicitly. "Architecture services in Balclutha, Otago" in headings and body text helps Google understand relevance.
+Meta descriptions - the site has these already on some pages which is good.
+Backlinks - getting listed on NZ architecture directories or local business directories builds authority over time.
+Site age - nothing to do here except get the domain registered sooner rather than later so it starts building history.
 
+Google Business Profile is the priority since it directly targets local searches and is free.
+How it works:
+The client creates a free profile at business.google.com
+They enter business details - name, address, phone, website URL, services, photos
+Google verifies the business (usually via a postcard sent to the business address or a phone call)
+Once verified, the business appears in Google Maps and the local search panel when people search for relevant terms nearby
+What it does:
+Shows the business on Google Maps
+Displays contact details, opening hours, and website link directly in search results
+Allows clients to leave Google reviews, which significantly impacts local search ranking
+Free to set up and maintain
 -----------------------------------------------------------------------------------------------------------------------------------
