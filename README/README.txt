@@ -123,4 +123,9 @@ If possible, add an X button to images opened from the project pages, a further 
 Remove the underline when hovering the logo in the footer
 Improve the overall formatting/styling, some areas look clunky
 
+Discussion points/other notes:
+Importance of SEO, custom domain, hosting options, post-deployment development, and cost efficiency
+Reworking/recreating website - will be much easier once all content is finalised and organised
+
+
 -----------------------------------------------------------------------------------------------------------------------------------
