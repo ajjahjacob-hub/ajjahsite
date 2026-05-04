@@ -114,6 +114,7 @@ at around 560px width
 On smaller screen sizes, too much white space is given between the end of the content and footer
 IMPORTANT: Don't forget to setup google analytics to cover page views, click tracking, traffic, user behaviour, etc. 
 Should only require a small JS snippet to each page.
+Do a final clean of all code, formatting, remove old comments. CSS needs particular attention.
 
 NON-ESSENTIALS
 
