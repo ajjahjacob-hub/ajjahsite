@@ -24,6 +24,8 @@ TODO: Add view fullscreen/larger when clicking project images
 <img src="images/1 CO HOUSING PLANS COVER SHEET.png" width="800" height="600" alt="Project image 1 placeholder">
 </a>
 
+-----------------------------------------------------------------------------------------------------------------------------------
+
 Updated list of issues, including non-essential (may 2026):
 
 Urgent: Remove the placeholder inquiry form on contact page (done)
@@ -63,6 +65,7 @@ The drawback is that black bars will be added to achieve this without compromisi
 that the images are fully visible by clicking to open a fullscreen view. Need to decide whether to take this 
 approach or to stay with the current setup.
 
+-----------------------------------------------------------------------------------------------------------------------------------
 
 04/05/26 updates for current week
 
@@ -105,3 +108,5 @@ Elements of the header appear to have a fixed max-width. Footer elements appear 
 If possible, add an X button to images opened from the project pages, a further improvement could be made to add
 < and > buttons to switch to the previous/next image of that project page.
 Remove the underline when hovering the logo in the footer
+
+-----------------------------------------------------------------------------------------------------------------------------------
