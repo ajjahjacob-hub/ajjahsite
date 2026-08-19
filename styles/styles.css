@@ -1,5 +1,5 @@
 /* =========================================================
-   AJJAH Designs – Polished Production Styles (no HTML changes)
+   AJJAH Architecture – Polished Production Styles
    ========================================================= */
 
 /* ---------- Theme ---------- */
@@ -220,6 +220,20 @@ main p a{
   box-shadow: var(--shadow-sm);
 }
 main p a:hover{ filter:brightness(.97); text-decoration:none; }
+
+/* Contact details remain readable links rather than CTA buttons. */
+main address p a{
+  display:inline;
+  background:transparent;
+  color:var(--accent);
+  border:0;
+  padding:0;
+  border-radius:0;
+  box-shadow:none;
+  text-decoration:underline;
+  overflow-wrap:anywhere;
+}
+main address p a:hover{ filter:none; text-decoration:none; }
 
 /* Images in content: balanced, not oversized */
 main section img{
