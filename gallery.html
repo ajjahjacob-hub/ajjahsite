@@ -1,168 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>AJJAH Designs | Gallery</title>
-		<meta name="description" content="Selected work from AJJAH Designs — concept studies, interiors, and residential projects showcasing thoughtful, practical design.">
-        <link rel="stylesheet" href="styles/styles.css">
-        <script src="js/main.js" defer></script>
+		<title>AJJAH Architecture | Projects</title>
+		<meta name="description" content="Explore AJJAH Architecture projects across completed building work, architectural study and creative practice.">
+		<link rel="stylesheet" href="styles/styles.css?v=20260819-projects">
+		<script src="js/main.js" defer></script>
 	</head>
 	<body>
 		<a href="#main" class="skip-link">Skip to main content</a>
 		<header>
 			<nav aria-label="Primary">
 				<a href="index.html">
-				<img src="images/AjjahLogoTransparent.png" width="413" height="218" alt="AJJAH DESIGNS Ltd logo">
-				<span>AJJAH Architecture Ltd</span>
+					<img src="images/AjjahLogoTransparent.png" width="413" height="218" alt="">
+					<span>AJJAH Architecture Ltd</span>
 				</a>
 				<button type="button" id="menu-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
 				<ul id="primary-menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="services.html">Services</a></li>
-					<li><a href="gallery.html" aria-current="page">Gallery</a></li>
+					<li><a href="gallery.html" aria-current="page">Projects</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="main">
-			<h1>Gallery</h1>
-			<section id="gallery" aria-labelledby="gallery-title">
-				<h2 id="gallery-title">Projects</h2>
-				<p>This gallery features my architectural study and design projects, alongside selected art
-					and gallery work, reflecting my current practice and creative exploration of space, 
-					form, and material.</p>
-				<a href="project1_projectname.html">
-					<figure>
-						<figcaption>Project 1 ARCHITECTURAL DESIGN 1<br>
-							Co-Housing project
-						<br><br>
-						<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
-                        <span class="theme-toggle__text">View</span>
-                        </button>
-						</figcaption>
-
-						<img src="images/Co Housing 2.png" width="800" height="600" alt="Project 1 image placeholder">
-					</figure>
-				</a>
-				<a href="project2_projectname.html">
-					<figure>
-						<figcaption>Project 2 ARCHITECTURAL DRAWING 1<br> 
-							Residential Design - 3D MODEL
-						<br><br>
-						<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
-                        <span class="theme-toggle__text">View</span>
-                        </button>
-						</figcaption>
-						<img src="images/3D Model Residential 1.jpg" width="800" height="600" alt="Project 2 image placeholder">
-					</figure>
-				</a>
-				<a href="project3_projectname.html">
-					<figure>
-						<figcaption>Project 3 BUIDING 1<br>
-							Transportable Cabin 18m2
-						<br><br>
-						<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
-                        <span class="theme-toggle__text">View</span>
-                        </button>
-						</figcaption>
-						<img src="images/CabinExterior1.png" width="800" height="600" alt="Project 3 image placeholder">
-					</figure>
-				</a>
-				<a href="project4_projectname.html">
-					<figure>
-						<figcaption>Project 4 BUILDING 2<br>
-							Shipping Container cabin 40m2
-						<br><br>
-						<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
-                        <span class="theme-toggle__text">View</span>
-                        </button>
-						</figcaption>
-						<img src="images/Shipping container edit.png" width="800" height="600" alt="Project 4 image placeholder">
-					</figure>
-				</a>
-				<a href="project5_projectname.html">
-					<figure>
-						<figcaption>Project 5 RENOVATION<br>
-							Large renovation project with covered deck area
-						<br><br>
-						<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
-                        <span class="theme-toggle__text">View</span>
-                        </button>
-						</figcaption>
-						<img src="images/Jen Alex transform 2.png" width="800" height="600" alt="Project 5 image placeholder">
-					</figure>
-				</a>
-				<a href="project6_projectname.html">
-					<figure>
-						<figcaption>Project 6 ART GALLERY<br>
-							Art work and other projects
-						<br><br>
-						<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
-                        <span class="theme-toggle__text">View</span>
-                        </button>
-						</figcaption>
-						<img src="images/MARIA Eye of Jesus.jpg" width="800" height="600" alt="Project 6 image placeholder">
-					</figure>
-				</a>
+			<h1>Projects</h1>
+			<p>Explore my work across built projects, architectural study and creative practice.</p>
+			<section aria-labelledby="project-categories-title">
+				<h2 id="project-categories-title">Choose a Portfolio</h2>
+				<div class="portfolio-grid">
+					<a class="portfolio-card" href="architecture-projects.html">
+						<span class="portfolio-card__icon" aria-hidden="true"></span>
+						<span class="status-badge">Public &amp; private work</span>
+						<h3>Architecture &amp; Built Projects</h3>
+						<p>Residential design, transportable cabins, renovations and completed building work.</p>
+						<span class="card-action">Explore this portfolio →</span>
+					</a>
+					<a class="portfolio-card" href="academic-portfolio.html">
+						<span class="portfolio-card__icon" aria-hidden="true"></span>
+						<span class="status-badge">Private access planned</span>
+						<h3>Academic Portfolio — SIT 2025–2026</h3>
+						<p>Architectural assignments, technical documentation and academic results.</p>
+						<span class="card-action">View portfolio overview →</span>
+					</a>
+					<a class="portfolio-card" href="creative-projects.html">
+						<span class="portfolio-card__icon" aria-hidden="true"></span>
+						<span class="status-badge">Selected public work</span>
+						<h3>Creative Practice &amp; Special Projects</h3>
+						<p>Art, craft, restoration, writing and other work beyond architecture and study.</p>
+						<span class="card-action">Explore this portfolio →</span>
+					</a>
+				</div>
 			</section>
 		</main>
 		<footer>
 			<a href="index.html">
-			<img src="images/AjjahLogoTransparent.png" width="413" height="218" alt="AJJAH DESIGNS Ltd logo">
-			<span>AJJAH Architecture Ltd</span>
+				<img src="images/AjjahLogoTransparent.png" width="413" height="218" alt="">
+				<span>AJJAH Architecture Ltd</span>
 			</a>
 			<nav aria-label="Footer">
 				<ul>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
-                    <li>
-                        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
-                            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-                            <span class="theme-toggle__text">Dark</span>
-                        </button>
-                    </li>
+					<li>
+						<button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
+							<span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+							<span class="theme-toggle__text">Dark</span>
+						</button>
+					</li>
 				</ul>
 			</nav>
 		</footer>
 	</body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
