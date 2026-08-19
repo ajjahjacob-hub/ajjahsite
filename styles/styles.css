@@ -530,9 +530,65 @@ a.project-card:hover{
 
 .project-card.is-placeholder .card-action{ color:var(--muted); }
 
+.featured-selection{
+  padding:0;
+  overflow:hidden;
+  border-top:4px solid var(--accent);
+}
+
+.featured-selection__card{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr);
+  gap:1rem;
+  align-items:center;
+  padding:1.35rem;
+  background:linear-gradient(135deg, color-mix(in oklab, var(--accent) 12%, var(--surface)), var(--surface));
+}
+
+.featured-selection__card h2{
+  margin:.65rem 0 .5rem;
+  line-height:1.2;
+}
+
+.featured-selection__card p{
+  max-width:70ch;
+  margin:0;
+  color:var(--muted);
+}
+
+.featured-selection__card .card-action{ display:block; }
+
+.featured-selection__card:hover{
+  background:var(--surface-2);
+  text-decoration:none;
+}
+
+.featured-selection__mark{
+  display:grid;
+  place-items:center;
+  width:5.5rem;
+  aspect-ratio:1;
+  border:1px solid var(--border);
+  border-radius:50%;
+  background:var(--surface-2);
+  color:var(--accent);
+  font-size:1.35rem;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+
 @media (min-width:700px){
   .portfolio-grid,
   .project-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width:760px){
+  .featured-selection__card{
+    grid-template-columns:minmax(0, 1fr) auto;
+    padding:1.75rem;
+  }
+
+  .featured-selection__mark{ width:7rem; }
 }
 
 @media (min-width:1000px){
