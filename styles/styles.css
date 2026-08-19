@@ -421,7 +421,7 @@ main section img{
 
 .project-card img{
   width:100%;
-  aspect-ratio:4/3;
+  aspect-ratio:16/10;
   object-fit:cover;
   margin:0;
   border:0;
@@ -433,8 +433,11 @@ main section img{
   display:flex;
   flex:1;
   flex-direction:column;
-  padding:1rem;
+  padding:.9rem;
 }
+
+.project-card__body h3{ font-size:1.05rem; }
+.project-card__body p{ font-size:.93rem; }
 
 .card-action{
   margin-top:auto;
@@ -478,6 +481,34 @@ main section img{
   text-align:center;
 }
 
+.project-card__folder-visual{
+  display:grid;
+  place-items:center;
+  aspect-ratio:16/10;
+  padding:1.25rem;
+  background:var(--surface-2);
+}
+
+.project-card__folder-icon{
+  position:relative;
+  display:block;
+  width:4.25rem;
+  height:3rem;
+  border-radius:.45rem;
+  background:color-mix(in oklab, var(--accent) 68%, var(--surface));
+}
+
+.project-card__folder-icon::before{
+  content:"";
+  position:absolute;
+  left:.35rem;
+  top:-.55rem;
+  width:1.8rem;
+  height:.8rem;
+  border-radius:.35rem .35rem 0 0;
+  background:inherit;
+}
+
 a.portfolio-card:hover,
 a.project-card:hover{
   background:var(--surface-2);
@@ -492,13 +523,21 @@ a.project-card:hover{
 
 .project-card.is-locked .card-action{ color:var(--muted); }
 
+.project-card.is-placeholder{
+  border-style:dashed;
+  background:var(--surface);
+}
+
+.project-card.is-placeholder .card-action{ color:var(--muted); }
+
 @media (min-width:700px){
   .portfolio-grid,
   .project-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
 }
 
 @media (min-width:1000px){
-  .portfolio-grid{ grid-template-columns:repeat(3, minmax(0, 1fr)); }
+  .portfolio-grid,
+  .project-grid{ grid-template-columns:repeat(3, minmax(0, 1fr)); }
 }
 /* =========================================================
    Forms (Contact)
