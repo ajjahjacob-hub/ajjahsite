@@ -755,6 +755,17 @@ footer nav a {
   margin-bottom: .5rem;
 }
 
+#gallery > h3 {
+  grid-column: 1 / -1;
+  margin: 1.5rem 0 .25rem;
+}
+
+@media (min-width:960px){
+  #gallery.restoration-gallery{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
 /* ===== Theme toggle button (footer) ===== */
 .theme-toggle{
   display:inline-flex;
