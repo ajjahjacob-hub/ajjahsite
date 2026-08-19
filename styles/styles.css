@@ -232,6 +232,67 @@ main section img{
   margin-top:.75rem;
 }
 
+/* About page: balanced portrait, award and professional status */
+#intro .about-profile{
+  display:grid;
+  gap:1.5rem;
+  align-items:start;
+}
+
+#intro .about-portrait,
+#intro .about-award{
+  width:100%;
+  margin:0;
+  min-width:0;
+  justify-self:center;
+}
+
+#intro .about-portrait{ max-width:360px; }
+#intro .about-award{ max-width:640px; }
+
+#intro .about-profile img{
+  width:100%;
+  margin:0;
+}
+
+#intro .about-portrait p,
+#intro .about-award figcaption{
+  margin:.85rem 0 0;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+#intro .about-award img{
+  background:#fff;
+  object-fit:contain;
+}
+
+.professional-note{
+  margin-top:1.5rem;
+  padding:1rem 1.1rem;
+  border-left:4px solid var(--accent);
+  border-radius:10px;
+  background:var(--surface-2);
+}
+
+.professional-note h3{
+  margin:0 0 .4rem;
+  font-size:1rem;
+  line-height:1.3;
+}
+
+.professional-note p{ margin:0; }
+
+@media (min-width:860px){
+  #intro .about-profile{
+    grid-template-columns:minmax(280px, .7fr) minmax(0, 1.3fr);
+    gap:2rem;
+  }
+
+  #intro .about-portrait{ justify-self:start; }
+  #intro .about-award{ justify-self:end; }
+}
+
 /* =========================================================
    Gallery Grid
    ========================================================= */
