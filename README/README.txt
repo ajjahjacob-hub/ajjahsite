@@ -157,3 +157,14 @@ Free to set up and maintain
 
 GBP should be setup after the website is already live with the correct URL
 -----------------------------------------------------------------------------------------------------------------------------------
+
+19/08/26 updates for current week
+
+GENERAL NOTES
+
+- Attract clients/professional - architectural focus
+- Link to app
+- Home/Services - professional side
+- Gallery to projects, architecture - more professional section, 1 folder for student stuff locked to access code, other projects.
+- 
+
