@@ -365,13 +365,39 @@ main section img{
 .student-number-mask::after{
   content:"";
   position:absolute;
-  top:68%;
-  left:53%;
-  width:25%;
-  height:8%;
+  top:var(--student-mask-top, 68%);
+  left:var(--student-mask-left, 53%);
+  width:var(--student-mask-width, 25%);
+  height:var(--student-mask-height, 8%);
   border-radius:3px;
-  background:rgba(18, 27, 33, .94);
+  background:var(--student-mask-colour, rgba(18, 27, 33, .94));
+  transform:rotate(var(--student-mask-rotate, 0deg));
   pointer-events:none;
+}
+
+.student-number-mask--cad-floor{
+  --student-mask-top:52.5%;
+  --student-mask-left:64%;
+  --student-mask-width:14%;
+  --student-mask-height:6%;
+  --student-mask-colour:rgba(117, 5, 9, .97);
+  --student-mask-rotate:-4deg;
+}
+
+.student-number-mask--cad-roof{
+  --student-mask-top:67.5%;
+  --student-mask-left:52%;
+  --student-mask-width:14%;
+  --student-mask-height:7%;
+  --student-mask-colour:rgba(244, 243, 237, .97);
+}
+
+.student-number-mask--cad-details{
+  --student-mask-top:74%;
+  --student-mask-left:55%;
+  --student-mask-width:14%;
+  --student-mask-height:7%;
+  --student-mask-colour:rgba(2, 76, 111, .97);
 }
 #gallery figcaption{
   padding:.75rem 1rem;
