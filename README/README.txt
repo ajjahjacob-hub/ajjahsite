@@ -169,9 +169,24 @@ GENERAL NOTES
 - 
 
 1. Are you connected directly to GitHub, using a local folder/repository, or editing through the GitHub website?
+   Answer: The workflow has been hybrid. I prepare and inspect changes in task-specific local Git copies, then publish them by committing through the signed-in GitHub website. I am not currently using a working GitHub command-line or API connection.
+
 2. Which GitHub repository and branch do you currently modify?
+   Answer: The repository is ajjahjacob-hub/ajjahsite and the branch is main. This repository is separate from the AJJAH Home Brief application.
+
 3. Do you commit directly to main, or can you create branches and pull requests?
+   Answer: Work to date has been committed directly to main through GitHub's web editor. Branches and pull requests can be used and should now become the standard workflow while two developers and two agents are collaborating. Each task should have its own branch and file scope, followed by a pull request into main.
+
 4. Is there any uncommitted work, saved workspace, or local copy that contains changes not yet on GitHub?
+   Answer: Several older task-specific local copies contain uncommitted or stale files, but all current intentional website work that was checked is already on GitHub main. There is no known current website change waiting to be published. The older copies, particularly ajjahsite-audit, are archives containing superseded versions and must not be treated as the source of truth. Start new work from a fresh pull or clone of main.
+
 5. What service publishes the live website, and does a push to main publish it automatically?
+   Answer: GitHub Pages publishes the live website at https://ajjahjacob-hub.github.io/ajjahsite/. A commit, push or merged pull request reaching main currently starts GitHub's default Pages build and deployment automatically. There is no custom deployment workflow stored in this repository.
+
 6. Do you have access to any other connected services for this project, such as the Home Brief site, Stripe, a domain provider, or hosting?
+   Answer: The Home Brief is a separate project hosted at https://ajjah-home-brief.randacus.chatgpt.site/ using OpenAI Sites. Its source is available separately, but it is not part of this GitHub Pages repository and must not be altered unless Anna Maria specifically requests it. I do not have direct access to the Stripe dashboard, Cloudflare or another DNS/domain registrar, an email provider, or GitHub through an API. No payment or runtime secrets are stored in the architecture website repository.
+
 7. Are there any project instructions, configuration files, or workflows that another developer should know about?
+   Answer: This is a plain static website. Root HTML files contain the pages, styles/styles.css contains the shared styling, js/main.js controls the menu and colour theme, and images/ contains the media. There is no package manager, build system, custom deployment workflow or formal AGENTS.md/CODEX.md instruction file. README/README.txt contains informal notes and some older items may now be out of date. Navigation, headers and footers are repeated across HTML files, so site-wide changes must be applied consistently. Image paths are case-sensitive and many filenames contain spaces. CSS links use manual ?v= cache-busting. Check all public images and drawings for client names, addresses, licence plates and identifiable people before publishing.
+
+Recommended collaboration workflow: pull main, create one feature branch per task, agree which files each person or agent owns, open a pull request, review it, merge it, confirm the GitHub Pages deployment succeeds, and then update any other active branch from main.
