@@ -631,61 +631,6 @@ main section img{
   transform:scale(1.12);
 }
 
-.portfolio-privacy-mask--commercial-contact{
-  --privacy-one-top:84%;
-  --privacy-one-left:0%;
-  --privacy-one-width:24%;
-  --privacy-one-height:16%;
-  --privacy-two-top:0;
-  --privacy-two-left:0;
-  --privacy-two-width:0;
-  --privacy-two-height:0;
-}
-
-.portfolio-privacy-mask--commercial-cover{
-  --privacy-one-top:82%;
-  --privacy-one-left:20%;
-  --privacy-one-width:51%;
-  --privacy-one-height:11%;
-  --privacy-two-top:84%;
-  --privacy-two-left:0;
-  --privacy-two-width:24%;
-  --privacy-two-height:16%;
-}
-
-.portfolio-privacy-mask--commercial-landscape{
-  --privacy-one-top:11%;
-  --privacy-one-left:22%;
-  --privacy-one-width:15%;
-  --privacy-one-height:8%;
-  --privacy-two-top:30%;
-  --privacy-two-left:6%;
-  --privacy-two-width:26%;
-  --privacy-two-height:20%;
-}
-
-.portfolio-privacy-mask--commercial-landscape-secondary{
-  --privacy-one-top:58%;
-  --privacy-one-left:8%;
-  --privacy-one-width:22%;
-  --privacy-one-height:11%;
-  --privacy-two-top:84%;
-  --privacy-two-left:0%;
-  --privacy-two-width:24%;
-  --privacy-two-height:16%;
-}
-
-.portfolio-privacy-mask--commercial-dimension-site{
-  --privacy-one-top:4%;
-  --privacy-one-left:24%;
-  --privacy-one-width:65%;
-  --privacy-one-height:10%;
-  --privacy-two-top:38%;
-  --privacy-two-left:6%;
-  --privacy-two-width:27%;
-  --privacy-two-height:21%;
-}
-
 .project-card__body{
   display:flex;
   flex:1;
