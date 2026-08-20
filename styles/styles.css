@@ -338,6 +338,23 @@ main section img{
   object-fit:contain;
   background:var(--surface-2);
 }
+
+/* Crops legacy contact fields from public portfolio sheets without altering the drawing. */
+.public-sheet-crop{
+  aspect-ratio:1.04;
+  overflow:hidden;
+  background:var(--surface-2);
+}
+
+#gallery .public-sheet-crop img{
+  display:block;
+  width:128%;
+  max-width:none;
+  height:100%;
+  aspect-ratio:auto;
+  object-fit:cover;
+  object-position:left center;
+}
 #gallery figcaption{
   padding:.75rem 1rem;
   color:var(--muted);
@@ -437,6 +454,21 @@ main section img{
 .project-card img.drawing-sheet{
   object-fit:contain;
   background:var(--surface-2);
+}
+
+.project-card__public-sheet-crop{
+  aspect-ratio:16/10;
+  overflow:hidden;
+  background:var(--surface-2);
+}
+
+.project-card__public-sheet-crop img{
+  width:128%;
+  max-width:none;
+  height:100%;
+  aspect-ratio:auto;
+  object-fit:cover;
+  object-position:left center;
 }
 
 .project-card__body{
