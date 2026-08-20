@@ -168,3 +168,10 @@ GENERAL NOTES
 - Gallery to projects, architecture - more professional section, 1 folder for student stuff locked to access code, other projects.
 - 
 
+1. Are you connected directly to GitHub, using a local folder/repository, or editing through the GitHub website?
+2. Which GitHub repository and branch do you currently modify?
+3. Do you commit directly to main, or can you create branches and pull requests?
+4. Is there any uncommitted work, saved workspace, or local copy that contains changes not yet on GitHub?
+5. What service publishes the live website, and does a push to main publish it automatically?
+6. Do you have access to any other connected services for this project, such as the Home Brief site, Stripe, a domain provider, or hosting?
+7. Are there any project instructions, configuration files, or workflows that another developer should know about?
