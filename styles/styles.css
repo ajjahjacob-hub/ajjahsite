@@ -399,6 +399,97 @@ main section img{
   --student-mask-height:7%;
   --student-mask-colour:rgba(2, 76, 111, .97);
 }
+
+/* Portfolio privacy treatments retain the drawing while obscuring identifying fields. */
+.portfolio-privacy-mask,
+.portfolio-bottom-crop{
+  position:relative;
+  overflow:hidden;
+  background:var(--surface-2);
+}
+
+#gallery .portfolio-privacy-mask img,
+#gallery .portfolio-bottom-crop img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+}
+
+.portfolio-privacy-mask::before,
+.portfolio-privacy-mask::after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  border-radius:4px;
+	background:rgb(235, 235, 230);
+  backdrop-filter:blur(12px);
+  pointer-events:none;
+}
+
+.portfolio-privacy-mask::before{
+  top:var(--privacy-one-top);
+  left:var(--privacy-one-left);
+  width:var(--privacy-one-width);
+  height:var(--privacy-one-height);
+}
+
+.portfolio-privacy-mask::after{
+  top:var(--privacy-two-top);
+  left:var(--privacy-two-left);
+  width:var(--privacy-two-width);
+  height:var(--privacy-two-height);
+}
+
+.portfolio-privacy-mask--concept-cover{
+  --privacy-one-top:31%;
+  --privacy-one-left:76%;
+  --privacy-one-width:20%;
+  --privacy-one-height:35%;
+  --privacy-two-top:53%;
+  --privacy-two-left:29%;
+  --privacy-two-width:14%;
+  --privacy-two-height:14%;
+}
+
+.portfolio-privacy-mask--concept-site{
+  --privacy-one-top:11%;
+  --privacy-one-left:57%;
+  --privacy-one-width:29%;
+  --privacy-one-height:10%;
+  --privacy-two-top:0;
+  --privacy-two-left:0;
+  --privacy-two-width:0;
+  --privacy-two-height:0;
+}
+
+.portfolio-privacy-mask--developed-cover{
+  --privacy-one-top:78%;
+  --privacy-one-left:11%;
+  --privacy-one-width:15%;
+  --privacy-one-height:11%;
+  --privacy-two-top:79%;
+  --privacy-two-left:27%;
+  --privacy-two-width:44%;
+  --privacy-two-height:10%;
+}
+
+.portfolio-bottom-crop{
+	aspect-ratio:1.6;
+}
+
+.portfolio-bottom-crop--deep{
+	aspect-ratio:16 / 9;
+}
+
+#gallery > .portfolio-source-note{
+  margin:0 0 .5rem;
+  padding:.85rem 1rem;
+  border-left:4px solid var(--accent);
+  border-radius:10px;
+  background:var(--surface-2);
+}
 #gallery figcaption{
   padding:.75rem 1rem;
   color:var(--muted);
