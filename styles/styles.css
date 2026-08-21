@@ -339,6 +339,16 @@ main section img{
   background:var(--surface-2);
 }
 
+#gallery > figure.gallery-wide{
+  grid-column:1 / -1;
+}
+
+#gallery > figure.gallery-wide img{
+  aspect-ratio:auto;
+  object-fit:contain;
+  background:var(--surface-2);
+}
+
 /* Crops legacy contact fields from public portfolio sheets without altering the drawing. */
 .public-sheet-crop{
   aspect-ratio:1.04;
