@@ -716,6 +716,90 @@ main section img{
 
 .privacy-note strong{ color:var(--text); }
 
+/* Collection 13: quiet nested collection and supporting-work links. */
+.collection-subfolder{
+  grid-column:1 / -1;
+  display:flex;
+  align-items:center;
+  gap:.9rem;
+  max-width:34rem;
+  margin:.25rem 0 0;
+  padding:.95rem 1rem;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-2);
+  color:var(--text);
+  text-decoration:none;
+  box-shadow:var(--shadow-sm);
+}
+
+.collection-subfolder:hover,
+.collection-subfolder:focus-visible{
+  border-color:color-mix(in oklab, var(--accent) 55%, var(--border));
+  text-decoration:none;
+}
+
+.collection-subfolder__icon{
+  position:relative;
+  flex:0 0 auto;
+  width:2.4rem;
+  height:1.65rem;
+  margin-top:.2rem;
+  border-radius:.28rem;
+  background:color-mix(in oklab, var(--accent) 48%, var(--surface));
+}
+
+.collection-subfolder__icon::before{
+  content:"";
+  position:absolute;
+  top:-.35rem;
+  left:.2rem;
+  width:1.05rem;
+  height:.5rem;
+  border-radius:.25rem .25rem 0 0;
+  background:inherit;
+}
+
+.collection-subfolder strong{ display:block; }
+
+.collection-subfolder small{
+  display:block;
+  margin-top:.12rem;
+  color:var(--muted);
+  font-size:.88rem;
+}
+
+.related-work{
+  grid-column:1 / -1;
+  margin-top:1.5rem;
+  padding-top:1.25rem;
+  border-top:1px solid var(--border);
+}
+
+.related-work h4{
+  margin:0 0 .4rem;
+  color:var(--muted);
+  font-size:1rem;
+}
+
+.related-work > a{
+  display:inline-flex;
+  align-items:center;
+  gap:.35rem;
+  color:var(--muted);
+  font-size:.92rem;
+  font-weight:700;
+  text-decoration:underline;
+  text-decoration-color:color-mix(in oklab, var(--muted) 45%, transparent);
+  text-underline-offset:.2em;
+}
+
+.related-work > a:hover,
+.related-work > a:focus-visible{
+  color:var(--text);
+  text-decoration-color:currentColor;
+}
+
 .project-card__private-visual{
   display:grid;
   place-items:center;
