@@ -524,6 +524,36 @@ main section img{
   gap:1rem;
 }
 
+.project-era + .project-era{
+  margin-top:clamp(2rem, 4vw, 3rem);
+  padding-top:clamp(1.5rem, 3vw, 2rem);
+  border-top:1px solid var(--border);
+}
+
+.project-era__header{
+  max-width:70ch;
+  margin:0 0 1rem;
+}
+
+.project-era__period{
+  margin:0 0 .2rem;
+  color:var(--accent);
+  font-size:.82rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.project-era__header h3{
+  margin:0;
+  font-size:clamp(1.2rem, 1.05rem + .7vw, 1.65rem);
+}
+
+.project-era__header > p:last-child{
+  margin:.35rem 0 0;
+  color:var(--muted);
+}
+
 .portfolio-card,
 .project-card{
   display:flex;
@@ -565,9 +595,14 @@ main section img{
 .portfolio-card h2,
 .portfolio-card h3,
 .project-card h2,
-.project-card h3{
+.project-card h3,
+.project-card h4{
   margin:.55rem 0 .45rem;
   line-height:1.25;
+}
+
+.project-card h4{
+  font-size:1.05rem;
 }
 
 .portfolio-card p,
