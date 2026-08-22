@@ -936,6 +936,483 @@ a.project-card:hover{
   .portfolio-grid,
   .project-grid{ grid-template-columns:repeat(3, minmax(0, 1fr)); }
 }
+
+/* =========================================================
+   Otago Polytechnic BAS application portfolio
+   ========================================================= */
+.bas-application-page main{
+  display:grid;
+  gap:clamp(3rem, 7vw, 6rem);
+  max-width:1180px;
+  padding-block:clamp(2rem, 5vw, 4.5rem);
+}
+
+.bas-hero{
+  display:grid;
+  gap:clamp(1.5rem, 4vw, 3rem);
+  padding:clamp(1.4rem, 4vw, 3.25rem);
+  border:1px solid color-mix(in oklab, var(--accent) 48%, var(--border));
+  border-radius:22px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 92% 8%, color-mix(in oklab, var(--accent) 24%, transparent), transparent 38%),
+    linear-gradient(135deg, var(--surface), color-mix(in oklab, var(--surface-2) 86%, var(--bg)));
+  box-shadow:var(--shadow-md);
+}
+
+.bas-kicker,
+.bas-section-label,
+.bas-work-card__eyebrow{
+  margin:0;
+  color:var(--accent);
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.11em;
+  line-height:1.4;
+  text-transform:uppercase;
+}
+
+.bas-hero h1{
+  max-width:18ch;
+  margin:.6rem 0 .75rem;
+  font-size:clamp(2.25rem, 1.4rem + 4vw, 4.8rem);
+  line-height:1.02;
+  letter-spacing:-.035em;
+}
+
+.bas-applicant{
+  margin:0 0 .7rem;
+  color:var(--text);
+  font-size:clamp(1.2rem, 1rem + .8vw, 1.65rem);
+  font-weight:750;
+}
+
+.bas-lead{
+  max-width:66ch;
+  margin:0;
+  color:var(--muted);
+  font-size:1.05rem;
+}
+
+.bas-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.7rem;
+  margin-top:1.35rem;
+}
+
+.bas-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:.65rem 1rem;
+  border:1px solid var(--border);
+  border-radius:11px;
+  background:var(--surface);
+  color:var(--text);
+  font-weight:750;
+}
+
+.bas-button:hover{
+  border-color:var(--accent);
+  background:var(--surface-2);
+  text-decoration:none;
+}
+
+.bas-button--primary{
+  border-color:var(--accent);
+  background:var(--accent);
+  color:var(--accent-ink);
+}
+
+.bas-button--primary:hover{
+  background:color-mix(in oklab, var(--accent) 88%, white);
+  color:var(--accent-ink);
+}
+
+.bas-evidence{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:.75rem;
+  margin:0;
+}
+
+.bas-evidence div{
+  min-width:0;
+  padding:1rem;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:color-mix(in oklab, var(--surface-2) 88%, transparent);
+}
+
+.bas-evidence dt{
+  color:var(--text);
+  font-size:clamp(1rem, .9rem + .55vw, 1.35rem);
+  font-weight:850;
+  line-height:1.2;
+}
+
+.bas-evidence dd{
+  margin:.35rem 0 0;
+  color:var(--muted);
+  font-size:.86rem;
+  line-height:1.45;
+}
+
+.bas-intro,
+.bas-practice{
+  display:grid;
+  gap:clamp(1.5rem, 4vw, 3rem);
+  align-items:start;
+}
+
+.bas-intro h2,
+.bas-practice h2,
+.bas-section-heading h2,
+.bas-closing h2{
+  margin:.4rem 0 .8rem;
+  font-size:clamp(1.65rem, 1.25rem + 1.8vw, 2.7rem);
+  line-height:1.12;
+  letter-spacing:-.02em;
+}
+
+.bas-intro p,
+.bas-practice__copy p,
+.bas-section-heading p,
+.bas-closing p{
+  max-width:72ch;
+  color:var(--muted);
+}
+
+.bas-criteria{
+  display:grid;
+  gap:.7rem;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.bas-criteria li{
+  display:grid;
+  grid-template-columns:2.35rem minmax(0, 1fr);
+  gap:.1rem .75rem;
+  padding:.9rem 1rem;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:var(--surface);
+}
+
+.bas-criteria li > span{
+  grid-row:1 / span 2;
+  color:var(--accent);
+  font-weight:850;
+}
+
+.bas-criteria strong{ line-height:1.35; }
+.bas-criteria small{ color:var(--muted); line-height:1.45; }
+
+.bas-application-note{
+  grid-column:1 / -1;
+  padding:1rem 1.1rem;
+  border-left:4px solid var(--accent);
+  border-radius:10px;
+  background:var(--surface-2);
+}
+
+.bas-application-note h3{
+  margin:0 0 .35rem;
+  font-size:1rem;
+}
+
+.bas-application-note p,
+.bas-context-note{
+  margin:0;
+  color:var(--muted);
+  font-size:.88rem;
+}
+
+.bas-practice{
+  padding:clamp(1.2rem, 3vw, 2rem);
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:var(--surface);
+}
+
+.bas-practice__images{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:.75rem;
+}
+
+.bas-practice__images figure{
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-2);
+}
+
+.bas-practice__images img{
+  width:100%;
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+}
+
+.bas-practice__images figcaption{
+  padding:.55rem .7rem;
+  color:var(--muted);
+  font-size:.78rem;
+  line-height:1.4;
+}
+
+.bas-practice__panorama{ grid-column:1 / -1; }
+.bas-practice__panorama img{ aspect-ratio:auto; object-fit:contain; }
+
+.bas-text-link{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  color:var(--accent);
+  font-weight:750;
+  text-decoration:underline;
+  text-decoration-color:color-mix(in oklab, var(--accent) 45%, transparent);
+  text-underline-offset:.2em;
+}
+
+.bas-text-link:hover{ text-decoration-color:currentColor; }
+
+.bas-work-section{
+  display:grid;
+  gap:1.3rem;
+}
+
+.bas-section-heading{
+  padding-bottom:1rem;
+  border-bottom:1px solid var(--border);
+}
+
+.bas-section-heading p:last-child{ margin-bottom:0; }
+
+.bas-work-grid{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr);
+  gap:1rem;
+}
+
+.bas-work-card{
+  display:grid;
+  min-width:0;
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  background:var(--surface);
+  box-shadow:var(--shadow-sm);
+  scroll-margin-top:100px;
+}
+
+.bas-work-card__media{
+  position:relative;
+  display:block;
+  min-height:230px;
+  overflow:hidden;
+  border-bottom:1px solid var(--border);
+  background:var(--surface-2);
+}
+
+a.bas-work-card__media:hover{ text-decoration:none; }
+
+.bas-work-card__media img{
+  width:100%;
+  height:100%;
+  min-height:230px;
+  aspect-ratio:16 / 10;
+  object-fit:cover;
+  transition:transform .25s ease;
+}
+
+a.bas-work-card__media:hover img{ transform:scale(1.018); }
+
+.bas-work-card__media--contain img{
+  object-fit:contain;
+  padding:.45rem;
+}
+
+.bas-work-card__media > span{
+  position:absolute;
+  top:.75rem;
+  left:.75rem;
+  display:grid;
+  place-items:center;
+  width:2.5rem;
+  aspect-ratio:1;
+  border:1px solid color-mix(in oklab, white 55%, transparent);
+  border-radius:50%;
+  background:rgba(8, 15, 22, .82);
+  color:white;
+  font-size:.82rem;
+  font-weight:850;
+  letter-spacing:.06em;
+  backdrop-filter:blur(8px);
+}
+
+.bas-work-card__body{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:1.15rem;
+}
+
+.bas-work-card h3{
+  margin:.45rem 0 .65rem;
+  font-size:clamp(1.25rem, 1.1rem + .65vw, 1.65rem);
+  line-height:1.2;
+}
+
+.bas-work-card__body > p{
+  margin:.3rem 0 .65rem;
+  color:var(--muted);
+}
+
+.bas-work-card__body strong{ color:var(--text); }
+
+.bas-work-card .bas-proof{
+  padding:.75rem .85rem;
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  background:var(--surface-2);
+  font-size:.9rem;
+}
+
+.bas-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem;
+  margin:auto 0 .25rem;
+  padding:1rem 0 .35rem;
+  list-style:none;
+}
+
+.bas-tags li{
+  padding:.25rem .55rem;
+  border:1px solid color-mix(in oklab, var(--accent) 35%, var(--border));
+  border-radius:999px;
+  color:color-mix(in oklab, var(--accent) 72%, var(--text));
+  font-size:.75rem;
+  font-weight:750;
+  line-height:1.35;
+}
+
+.bas-availability{
+  width:100%;
+  margin-top:auto !important;
+  padding-top:1rem;
+  border-top:1px solid var(--border);
+  font-size:.86rem;
+  font-style:italic;
+}
+
+.bas-closing{
+  padding:clamp(1.4rem, 4vw, 2.5rem);
+  border:1px solid color-mix(in oklab, var(--accent) 46%, var(--border));
+  border-radius:18px;
+  background:linear-gradient(120deg, color-mix(in oklab, var(--accent) 12%, var(--surface)), var(--surface));
+}
+
+@media (min-width:760px){
+  .bas-hero{ grid-template-columns:minmax(0, 1.35fr) minmax(270px, .65fr); }
+  .bas-intro{ grid-template-columns:minmax(0, 1fr) minmax(310px, .8fr); }
+  .bas-practice{ grid-template-columns:minmax(300px, .75fr) minmax(0, 1.25fr); }
+  .bas-work-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width:520px){
+  .bas-evidence{ grid-template-columns:minmax(0, 1fr); }
+  .bas-actions{ flex-direction:column; }
+  .bas-button{ width:100%; }
+}
+
+@page{
+  size:A4 portrait;
+  margin:12mm;
+}
+
+@media print{
+  .bas-application-page{
+    background:white;
+    color:#101820;
+    font-size:10pt;
+  }
+
+  .bas-application-page > header,
+  .bas-application-page > footer,
+  .bas-application-page .bas-actions{ display:none !important; }
+
+  .bas-application-page main{
+    display:block;
+    max-width:none;
+    padding:0;
+  }
+
+  .bas-hero,
+  .bas-intro,
+  .bas-practice,
+  .bas-work-section,
+  .bas-closing{ margin-bottom:18mm; }
+
+  .bas-hero,
+  .bas-practice,
+  .bas-closing,
+  .bas-application-page main > section,
+  .bas-work-card,
+  .bas-criteria li,
+  .bas-evidence div{
+    border-color:#b9c2ca;
+    background:white;
+    box-shadow:none;
+  }
+
+  .bas-hero h1,
+  .bas-applicant,
+  .bas-evidence dt,
+  .bas-application-note h3,
+  .bas-work-card h3,
+  .bas-work-card__body strong{ color:#101820; }
+
+  .bas-lead,
+  .bas-evidence dd,
+  .bas-intro p,
+  .bas-practice__copy p,
+  .bas-section-heading p,
+  .bas-closing p,
+  .bas-work-card__body > p,
+  .bas-application-note p,
+  .bas-context-note,
+  .bas-criteria small{ color:#394650; }
+
+  .bas-kicker,
+  .bas-section-label,
+  .bas-work-card__eyebrow,
+  .bas-text-link,
+  .bas-criteria li > span,
+  .bas-tags li{ color:#145a57; }
+
+  .bas-tags li{ border-color:#7aa8a5; }
+
+  .bas-application-note{
+    border-color:#145a57;
+    background:#f3f6f6;
+  }
+
+  .bas-practice__images figure{ background:#fff; }
+  .bas-practice__images figcaption{ color:#394650; }
+  .bas-work-card__media > span{ display:none; }
+
+  .bas-work-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+  .bas-work-card{ break-inside:avoid; page-break-inside:avoid; }
+  .bas-work-card__media{ min-height:48mm; }
+  .bas-work-card__media img{ min-height:48mm; }
+}
 /* =========================================================
    Forms (Contact)
    ========================================================= */
