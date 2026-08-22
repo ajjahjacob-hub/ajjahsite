@@ -246,6 +246,67 @@ main section img{
   margin-top:.75rem;
 }
 
+/* Homepage project evidence: authorised photography and privacy-safe CAD crop */
+.home-project-collage,
+.home-concept-figure{
+  margin:1rem 0 0;
+}
+
+.home-project-collage__grid{
+  display:grid;
+  gap:.75rem;
+}
+
+.home-project-collage__panel{
+  display:grid;
+  place-items:center;
+  min-width:0;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#f3f1ea;
+  box-shadow:var(--shadow-sm);
+}
+
+main section .home-project-collage__panel img{
+  width:100%;
+  height:auto;
+  margin:0;
+  border:0;
+  border-radius:0;
+  background:#f3f1ea;
+  box-shadow:none;
+  object-fit:contain;
+}
+
+.home-project-collage figcaption,
+.home-concept-figure figcaption{
+  margin:.75rem 0 0;
+  color:var(--muted);
+  font-size:.95rem;
+  line-height:1.55;
+}
+
+.home-project-collage figcaption strong,
+.home-concept-figure figcaption strong{
+  color:var(--text);
+}
+
+.home-concept-figure > img{
+  margin-top:0;
+}
+
+@media (min-width:700px){
+  .home-project-collage__grid{
+    grid-template-columns:minmax(0, .7fr) minmax(0, 1fr);
+    align-items:stretch;
+  }
+
+  main section .home-project-collage__panel img{
+    height:100%;
+  }
+}
+
 /* About page: balanced portrait, award and professional status */
 #intro .about-profile{
   display:grid;
