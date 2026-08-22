@@ -843,6 +843,28 @@ main section .home-project-collage__panel img{
   font-size:.88rem;
 }
 
+.mentoring-case-study{
+  grid-column:1 / -1;
+  max-width:70ch;
+  margin:.25rem 0 .5rem;
+  padding:1.15rem 1.25rem;
+  border:1px solid var(--border);
+  border-left:4px solid var(--accent);
+  border-radius:12px;
+  background:var(--surface-2);
+  box-shadow:var(--shadow-sm);
+}
+
+.mentoring-case-study h4{
+  margin:0 0 .65rem;
+  color:var(--text);
+}
+
+.mentoring-case-study p{
+  margin:.55rem 0 0;
+  color:var(--muted);
+}
+
 .related-work{
   grid-column:1 / -1;
   margin-top:1.5rem;
